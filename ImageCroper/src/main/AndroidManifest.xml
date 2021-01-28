@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.tino.imagecropper">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Query permission for Package Visibility -->
+    <queries>
+        <package android:name="com.google.android.apps.docs" />
+        <package android:name="com.google.android.apps.photos" />
+        <package android:name="com.android.gallery" />
+
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <application>
+        <provider
+            android:name="dev.tino.imagecropper.CropFileProvider"
+            android:authorities="${applicationId}.cropper.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/library_file_paths" />
+        </provider>
+    </application>
+</manifest>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="crop_image_activity_title">Crop Image</string>
+    <string name="pick_image_intent_chooser_title">Upload from</string>
+    <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+</resources>

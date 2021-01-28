@@ -1,0 +1,3 @@
+include ':ImageCroper'
+include ':app'
+rootProject.name = "Cropper"

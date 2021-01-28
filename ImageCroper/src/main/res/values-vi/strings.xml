@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="crop_image_activity_title">Cắt ảnh</string>
+    <string name="pick_image_intent_chooser_title">Tải ảnh từ</string>
+    <string name="crop_image_activity_no_permissions">Đang hủy, các quyền đã yêu cầu không được cấp</string>
+</resources>
